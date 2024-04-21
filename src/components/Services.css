@@ -1,0 +1,54 @@
+/* Services.css */
+
+#services {
+    padding: 50px 0;
+}
+
+#services h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center; /* Align the title to the center */
+}
+
+#services ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center-align the cards */
+}
+
+#services li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Add margin to separate the cards */
+    opacity: 0; /* Initially hide the cards */
+    transform: translateY(20px); /* Move the cards down */
+    animation: fadeUp 0.5s ease forwards; /* Apply animation */
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#services li h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#services li p {
+    font-size: 1.2rem;
+    color: #777;
+    line-height: 1.5;
+}
